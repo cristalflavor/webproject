@@ -1,6 +1,7 @@
 
-
 $(document).ready(function() {
+	var dWidth = screen.availWidth;
+	$('.containerHome').css("width", dWidth);
 	var user;
 	$(':text').focus();
 	$('.aConnect').click(function() {
