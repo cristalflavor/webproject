@@ -6,7 +6,7 @@ $(document).ready(function() {
 	$('.aConnect').click(function() {
 		$('.container, .aConnect').fadeOut('fast');
 		$('.containerHome').animate({
-			'top' : '+=37em'
+			'top' : '+=86%'
 		}, 1000);
 		//$('<center><img src="images/bricolage.png" /></center>').appendTo('html').css({
 		$('<div id="container5"></div>').appendTo('html').css({

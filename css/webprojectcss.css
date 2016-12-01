@@ -8,6 +8,7 @@ body {
 	overflow: hidden;
 }
 
+/* Es el contenedor del contenedor en donde se encuentran los inputs (subContainer) para creación de cuenta. */
 .container {
 	position: relative;
 	top: 11%;
@@ -20,6 +21,7 @@ body {
 	box-shadow: 10px 10px 10px rgba(0,0,0,.5);
 }
 
+/* Es el contenedor de los inputs para creación de cuenta */
 .subContainer {
 	position: relative;
 	top: 20%;
@@ -28,6 +30,7 @@ body {
 	margin: auto;
 }
 
+/* Es el contenedor que tiene la frase "I already have an account!" */
 .aConnect {
 	z-index: 1;
 	position: relative;
@@ -43,8 +46,13 @@ body {
 	color: white;
 	box-shadow: 10px 10px 10px rgba(0,0,0,.5);
 	cursor: pointer;
+	-webkit-transition: box-shadow 0.5s ease-in;
+}
+.aConnect:hover {
+	box-shadow: 0em 0em 0.2em 0.4em lightblue;
 }
 
+/* La frase "I already have an account!" */
 #aCon {
 	position: relative;
 	display: inline-block;
@@ -52,6 +60,7 @@ body {
 	padding-top: 0.2em;
 }
 
+/* La barra superior en donde están los campos user y password */
 .containerHome {
 	position: absolute;
 	top: 0.5%;
@@ -59,8 +68,9 @@ body {
 	height: 8%;
 	width: 100%;
 	border: 0.3em solid black;
-	background: linear-gradient(0deg, black, rgba(27,47,199,1.00), black);
+	/*background: linear-gradient(0deg, black, rgba(27,47,199,1.00), black);*/
 	box-shadow: 10px 10px 10px rgba(0,0,0,.5);
+	background: orange;
 }
 
 .home {
@@ -99,42 +109,59 @@ input {
 	height: 90%;
 }
 
+/* El botón que dice "Login" */
 #connecting {
   top: 20%;
 	position: absolute;
   height: 450%;
+	width: 20%;
 	left: -6em;
 	font-family: Impact;
 	border-radius: 10%;
 	background: white;
-	-webkit-transition: all 1s ease-in background;
+	text-shadow: 0.1em 0.1em 0.2em lightblue;
+	-webkit-transition: background 0.5s ease-in, text-shadow 0.5s ease-in;
 	cursor: pointer;
 }
-
+/* La transición del botón #connecting que dice "Login" */
 #connecting:hover {
-	background: linear-gradient(90deg, rgb(27,47,199), white, rgb(27,47,199));
+	background: linear-gradient(0deg, rgb(27,47,199), white, rgb(27,47,199));
+	text-shadow: 0.1em 0.1em 0.2em violet;
 }
 
+/*///////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////
+No sé a qué elemento apunta
+///////////////////////////////////////////////////////////////////////////////////////////////*/
 #usuario2 {
 	background: linear-gradient(0deg,  rgba(27,47,199,1.00), red);
 	border-radius: 10%;
 }
 
+/* Botón que confirma el envío para el registro de la cuenta. Dice "Confirm" */
 #submit{
 	float: none;
 	cursor: pointer;
-	background: linear-gradient(0deg,  rgba(27,0,199,1.00), lightblue);
+	background: white;
+	-webkit-transition: all 0.5s ease;
+	text-shadow: 0.1em 0.1em 0.2em lightblue;
+	box-shadow: 0em 0em 0.05em 0.1em white;
+	font-weight: bold;
 }
-#submit:hover{
-	background: linear-gradient(0deg,  white, blue);
+#submit:hover {
+	background: linear-gradient(0deg, white, blue);
+	box-shadow: 0em 0em 0.2em 0.4em lightblue;
 }
 
+/* El contenedor de los pop ups "Email already in use", "Registration succesful", etc */
 .response {
 	position: relative;
 	top: 10em;
 	color: white;
 	font-size: 1.5em;
 	font-family: Impact;
+	background: orange;
+	text-shadow: 0em 0em 0.2em black, 0em 0em 0.3em red;
 }
 
 .imagen {
